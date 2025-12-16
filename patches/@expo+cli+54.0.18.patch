@@ -1,0 +1,13 @@
+diff --git a/node_modules/@expo/cli/build/src/start/server/metro/withMetroMultiPlatform.js b/node_modules/@expo/cli/build/src/start/server/metro/withMetroMultiPlatform.js
+index 2832099..38a58ee 100644
+--- a/node_modules/@expo/cli/build/src/start/server/metro/withMetroMultiPlatform.js
++++ b/node_modules/@expo/cli/build/src/start/server/metro/withMetroMultiPlatform.js
+@@ -637,7 +637,7 @@ function withExtendedResolver(config, { tsconfig, autolinkingModuleResolverInput
+                 nodejsSourceExtensions = getNodejsExtensions(context.sourceExts);
+             }
+             context.sourceExts = nodejsSourceExtensions;
+-            context.unstable_enablePackageExports = true;
++            context.unstable_enablePackageExports = false;
+             context.unstable_conditionsByPlatform = {};
+             const isReactServerComponents = ((_context_customResolverOptions1 = context.customResolverOptions) == null ? void 0 : _context_customResolverOptions1.environment) === 'react-server';
+             if (isReactServerComponents) {
